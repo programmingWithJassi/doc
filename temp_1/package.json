@@ -1,0 +1,50 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Documentation Site for Continuum Design System (CDS) by Verve",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cds-design/docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cds-design/docs/issues"
+  },
+  "homepage": "https://github.com/cds-design/docs#readme",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm gen && next build",
+    "dev": "pnpm gen && next dev",
+    "gen": "pnpm gen:vars && pnpm gen:components",
+    "gen:components": "generate components ./pages/components",
+    "gen:vars": "generate variables ./pages/reference/variables.mdx",
+    "start": "next start"
+  },
+  "maintainers": [
+    {
+      "name": "Rajaniraiyn R",
+      "email": "rajaniraiyn@gmail.com",
+      "url": "https://rajaniraiyn.github.io"
+    },
+    {
+      "name": "Tejaswini T",
+      "email": "teejaswan12@gmail.com",
+      "url": "https://teejaswan.github.io"
+    }
+  ],
+  "dependencies": {
+    "ahooks": "^3.7.8",
+    "cds-design": "*",
+    "next": "^13.4.9",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cds-design/auto-gen": "*",
+    "@types/react": "^18.2.20",
+    "typescript": "^5.1.6"
+  }
+}

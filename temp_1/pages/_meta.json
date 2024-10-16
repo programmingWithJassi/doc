@@ -1,0 +1,23 @@
+{
+  "*": {
+    "theme": {}
+  },
+  "index": "Introduction",
+  "getting-started": "Getting Started",
+  "-": {
+    "type": "separator"
+  },
+  "guidelines": "Guidelines",
+  "components": "Components",
+  "customization": "Customization",
+  "advanced": "Advanced",
+  "--": {
+    "type": "separator"
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "href": "https://github.com/orgs/cds-design/projects/1/views/1?layout=roadmap"
+  },
+  "reference": "Reference",
+  "about": "About"
+}

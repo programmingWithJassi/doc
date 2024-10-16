@@ -1,0 +1,93 @@
+import { Steps, Tab, Tabs } from "nextra-theme-docs";
+
+# Getting Started
+
+<Steps>
+ 
+### Installing `cds-design`
+ 
+Install Continuum Design System using your favorite package manager
+
+<Tabs items={["pnpm", "yarn", "npm"]}>
+  <Tab>
+  ```sh copy
+  pnpm install cds-design
+  ```
+  </Tab>
+  <Tab>
+  ```sh copy
+  yarn install cds-design
+  ```
+  </Tab>
+  <Tab>
+  ```sh copy
+  npm install cds-design
+   ```
+   </Tab>
+</Tabs>
+
+### Load needed components
+
+```ts copy
+import { load } from "cds-design"; // or import load from "cds-design"
+
+load("button", "input", "checkbox");
+```
+
+For More components see [Components](/components)
+
+### Usage
+
+<Tabs items={["HTML", "Svelte", "React (JSX)", "Vue"]}>
+
+<Tab>
+```html copy
+<script type="module">
+    import { load } from "https://esm.run/cds-design" // or import load from "https://esm.run/cds-design"
+    load("button", "input", "checkbox")
+</script>
+
+<cds-button>Click Me</cds-button>
+```
+</Tab>
+<Tab>
+```svelte copy
+<script context="module">
+    import { load } from "cds-design" // or import load from "cds-design"
+    load("button", "input", "checkbox")
+</script>
+
+<cds-button>Click Me</cds-button>
+```
+
+</Tab>
+<Tab>
+```tsx copy
+import { load } from "cds-design" // or import load from "cds-design"
+load("button", "input", "checkbox")
+
+export default () => {
+  return (
+    <cds-button>Click Me</cds-button>
+  )
+}
+```
+</Tab>
+<Tab>
+```vue copy
+<script setup lang="ts">
+    import { load } from "cds-design" // or import load from "cds-design"
+    load("button", "input", "checkbox")
+</script>
+
+<template>
+    <cds-button>Click Me</cds-button>
+</template>
+```
+</Tab>
+
+</Tabs>
+
+Thats it! You are ready to use Continuum Design System
+
+</Steps>
